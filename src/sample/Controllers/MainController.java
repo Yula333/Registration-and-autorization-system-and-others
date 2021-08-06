@@ -24,7 +24,7 @@ import java.sql.SQLException;
 public class MainController {
 
     @FXML
-    private Button btn_exit;
+    private Button btn_exit, btn_add_article;
 
     @FXML
     private VBox paneVBox;
@@ -92,6 +92,19 @@ public class MainController {
             e.printStackTrace();
         }
         });
-       }
 
+    btn_add_article.setOnAction(event -> {
+        Parent root = null;
+        try {
+            root = FXMLLoader.load(getClass().getResource("/sample/scenes/addArticle.fxml"));
+            Stage primaryStage = (Stage)((Node) event.getSource()).getScene().getWindow();
+            primaryStage.setTitle("Регистрация и авторизация");
+            primaryStage.setScene(new Scene(root, 600, 400));
+            primaryStage.show();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    });
+    }
 }

@@ -31,10 +31,18 @@
                 <Cursor fx:constant="HAND" />
             </cursor>
         </Button>
-      <ScrollPane focusTraversable="false" hbarPolicy="NEVER" layoutY="109.0" prefHeight="294.0" prefWidth="600.0" stylesheets="@../styles/style.css">
+      <ScrollPane focusTraversable="false" hbarPolicy="NEVER" layoutY="106.0" prefHeight="293.0" prefWidth="600.0" stylesheets="@../styles/style.css">
          <content>
-            <VBox fx:id="paneVBox" prefHeight="300.0" prefWidth="600.0" style="-fx-background-color: #343434;" />
+            <VBox fx:id="paneVBox" prefHeight="294.0" prefWidth="587.0" style="-fx-background-color: #343434;" />
          </content>
       </ScrollPane>
+      <Button fx:id="btn_add_article" layoutX="14.0" layoutY="48.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="155.0" stylesheets="@../styles/style.css" text="Добавить статью" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
     </children>
 </AnchorPane>

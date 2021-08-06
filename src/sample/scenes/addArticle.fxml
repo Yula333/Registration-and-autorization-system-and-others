@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import javafx.scene.control.Button?>-->
+<!--<?import javafx.scene.control.Label?>-->
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<!--<?import javafx.scene.layout.ColumnConstraints?>-->
+<!--<?import javafx.scene.layout.GridPane?>-->
+<!--<?import javafx.scene.layout.RowConstraints?>-->
+<!--<?import javafx.scene.text.Font?>-->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #343434;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.AddArticleController">
+    <children>
+        <Label layoutX="125.0" layoutY="36.0" prefHeight="38.0" prefWidth="350.0" text="Добавление новой статьи" textFill="WHITE">
+            <font>
+                <Font name="Tahoma Bold" size="25.0" />
+            </font>
+        </Label>
+        <TextField fx:id="title_field" focusTraversable="false" layoutX="123.0" layoutY="100.0" prefHeight="42.0" prefWidth="341.0" promptText="Название статьи" styleClass="text-input" stylesheets="@../styles/style.css">
+            <font>
+                <Font name="Tahoma" size="14.0" />
+            </font>
+        </TextField>
+        <Button fx:id="btn_add" layoutX="242.0" layoutY="347.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="116.0" stylesheets="@../styles/style.css" text="Добавить" textFill="WHITE">
+            <font>
+                <Font name="Tahoma" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+      <TextArea fx:id="intro_field" focusTraversable="false" layoutX="50.0" layoutY="168.0" prefHeight="151.0" prefWidth="222.0" promptText="Анонс статьи" styleClass="text_input" stylesheets="@../styles/text_area.css">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="text_field" focusTraversable="false" layoutX="318.0" layoutY="168.0" prefHeight="151.0" prefWidth="222.0" promptText="Текст статьи" styleClass="text_input" stylesheets="@../styles/text_area.css">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </TextArea>
+    </children>
+</AnchorPane>

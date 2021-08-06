@@ -58,4 +58,15 @@ public class DB {
         ResultSet res = statement.executeQuery(sql);
         return res;
     }
+
+    public void addArticle(String title, String intro, String text) throws SQLException, ClassNotFoundException {
+        String sql = "INSERT INTO `articles` (`title`, `intro`, `text`, `views`) VALUES (?, ?, ?, ?)";
+        PreparedStatement prst = getDbConn().prepareStatement(sql);
+        prst.setString(1, title);
+        prst.setString(2, intro);
+        prst.setString(3, text);
+        prst.setInt(4, 15);
+        prst.executeUpdate();
+
+    }
 }
